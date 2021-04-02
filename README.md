@@ -25,32 +25,32 @@ CollegeChat is a social networking application for college students and instruct
 **Required Must-have Stories**
 
 * Common User Stories:
-* [ ] Login/LogoutCancel changes
-- [ ] chats
-- [ ] Notifications
+ * [ ] Login/LogoutCancel changes
+ * [ ] chats
+ * [ ] Notifications
 
 * Admin User Stories:
-- [ ] Add and edit colleges 
+* [ ] Add and edit colleges 
 
 * College User Stories:
-- [ ] Create individual rooms for each class/club/organization 
-- [ ] Name rooms
-- [ ] Reset rooms 
-- [ ] Assign professor/group admin to classes via code/email
+ * [ ] Create individual rooms for each class/club/organization 
+ * [ ] Name rooms
+ * [ ] Reset rooms 
+ * [ ] Assign professor/group admin to classes via code/email
 
 * Instructor User Story:
-- [ ] Invite students by class code/email (with college + class identifier) 
-- [ ] Remove students
-- [ ] Post on bulletin board
-- [ ] Delete posts of self and other students
-- [ ] Chat messages to students 
-- [ ] Delete chats messages of other students
+ * [ ] Invite students by class code/email (with college + class identifier) 
+ * [ ] Remove students
+ * [ ] Post on bulletin board
+ * [ ] Delete posts of self and other students
+ * [ ] Chat messages to students 
+ * [ ] Delete chats messages of other students
 
 * Student User Story:
-- [ ] Create account
-- [ ] Reply to posts
-- [ ] Send direct messages other students
-- [ ] Send messages in group chat
+ * [ ] Create account
+ * [ ] Reply to posts
+ * [ ] Send direct messages other students
+ * [ ] Send messages in group chat
 
 
 **Optional Nice-to-have Stories**
