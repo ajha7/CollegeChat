@@ -23,7 +23,6 @@ CollegeChat is a social networking application for college students and instruct
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-
 * Common User Stories:
   * [ ] Login/LogoutCancel changes
   * [ ] chats
@@ -48,9 +47,7 @@ CollegeChat is a social networking application for college students and instruct
   * [ ] Send direct messages other students
   * [ ] Send messages in group chat
 
-
 **Optional Nice-to-have Stories**
-
 * Partially reset room
 * Group sections under a single class e.g. 5 different sections under Math 161A
 * Customize group chats
@@ -58,44 +55,35 @@ CollegeChat is a social networking application for college students and instruct
 * Instructor can delete own messages 
 * Onboarding
 
-
 ### 2. Screen Archetypes
- 
 * Login/Register
   * College Admin Home
   * Student Home
   * Instructor Home
   * App Admin Home
-
 * Stream
   * Respective user can view all college chats/classes
   * App Admin Home, provide UI for admin actions
-
 * Creation
   * College user can add classes
   * Add app admin
   * Student add class
   * Student new post
   * Instructor new post
-
 * Profile
   * User can view profile
-
 * Settings
   * Instructor user can view settings of chat
   * College user can edit class settings
   * College user can edit college settings
   * Edit app admin
   * Edit user
-
 * Messaging
   * Respective User messaging
-
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
-
 * Add Class
 * Add College
 * Add College Administrator
@@ -106,44 +94,29 @@ CollegeChat is a social networking application for college students and instruct
 * Logout
 * Settings
 
-
 **Flow Navigation** (Screen to Screen)
-
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
-
 * SignUp
   * Login screen
-
 * Login Screen
   * College Admin Home
   * Student Home
   * Instructor Home
   * App Admin Home
-
 * College Admin Home
   * Edit Class
-
 * Student Home
   * Student Posts
   * Student Profile
   * Student Add Class
-
 * Instructor Home
   * Instructor Add class
   * Instructor Profile
   * Teacher Posts
-
 * App Admin Home
   * Add College
   * Colleges
   * App Admins
   * Users
-
 
 ## Wireframes
 Home Screens
