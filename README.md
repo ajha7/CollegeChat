@@ -122,7 +122,7 @@ CollegeChat is a social networking application for college students and instruct
 Home Screens
 <img src="https://drive.google.com/file/d/1mYDmj0Cbuo8EOKrbYxdC7i8QyU52ZcHX/view?usp=sharing" width=600>
 App Admin
-<img src="https://drive.google.com/file/d/1mnIgnn0orBdvn6W6pFdMWw2V9ruFQDsi/view?usp=sharing" width=600>
+<img src="https://github.com/CollegeChat/CollegeChat/blob/main/Wireframes/App%20Admin.png" width=600>
 College Admin
 <img src="https://drive.google.com/file/d/1_Ma36ZQYb-KMB7gSjK2jOdPJztSI7hk6/view?usp=sharing" width=600>
 Instructor
