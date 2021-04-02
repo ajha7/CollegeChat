@@ -11,7 +11,6 @@
 CollegeChat is a social networking application for college students and instructors. Each college will have all offered classes listed on the main page. Students will have access to their designated classes. College admin has the power to monitor all the group chats and posts. Students can have smoother communication with their instructors. Since everything is in distance learning, this application will increase the collaboration between students and instructors.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Social Networking
 - **Mobile:** Initially, this application is designed for the mobile platform. Later on, there is a plan to develop this for web applications with the same functionality.
 - **Story:** Students and instructors will have easy access to communicate with each other and post study-related materials for each class.
@@ -26,32 +25,32 @@ CollegeChat is a social networking application for college students and instruct
 **Required Must-have Stories**
 
 * Common User Stories:
-  [] Login/Logout
-  [] chats
-  [] Notifications
+- [] Login/Logout
+- [] chats
+- [] Notifications
 
 * Admin User Stories:
-  [] Add and edit colleges 
+- [] Add and edit colleges 
 
 * College User Stories:
-  [] Create individual rooms for each class/club/organization 
-  [] Name rooms
-  [] Reset rooms 
-  [] Assign professor/group admin to classes via code/email
+- [] Create individual rooms for each class/club/organization 
+- [] Name rooms
+- [] Reset rooms 
+- [] Assign professor/group admin to classes via code/email
 
 * Instructor User Story:
-  [] Invite students by class code/email (with college + class identifier) 
-  [] Remove students
-  [] Post on bulletin board
-  [] Delete posts of self and other students
-  [] Chat messages to students 
-  [] Delete chats messages of other students
+- [] Invite students by class code/email (with college + class identifier) 
+- [] Remove students
+- [] Post on bulletin board
+- [] Delete posts of self and other students
+- [] Chat messages to students 
+- [] Delete chats messages of other students
 
 * Student User Story:
-  [] Create account
-  [] Reply to posts
-  [] Send direct messages other students
-  [] Send messages in group chat
+- [] Create account
+- [] Reply to posts
+- [] Send direct messages other students
+- [] Send messages in group chat
 
 
 **Optional Nice-to-have Stories**
