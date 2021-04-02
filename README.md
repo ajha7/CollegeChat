@@ -119,15 +119,15 @@ CollegeChat is a social networking application for college students and instruct
   * Users
 
 ## Wireframes
-*Home Screens*
+**Home Screens**
 <img src="https://drive.google.com/file/d/1mYDmj0Cbuo8EOKrbYxdC7i8QyU52ZcHX/view?usp=sharing" width=600>
-*App Admin*
+**App Admin**
 <img src="https://drive.google.com/file/d/1mnIgnn0orBdvn6W6pFdMWw2V9ruFQDsi/view?usp=sharing" width=600>
-*College Admin*
+**College Admin**
 <img src="https://drive.google.com/file/d/1_Ma36ZQYb-KMB7gSjK2jOdPJztSI7hk6/view?usp=sharing" width=600>
-*Instructor*
+**Instructor**
 <img src="https://drive.google.com/file/d/1mtINe85cn4zjp1NNax0lSt9vRuJIXOMa/view?usp=sharing" width=600>
-*Student*
+**Student**
 <img src="https://drive.google.com/file/d/1ESvpa_p2htO1EIAOCAoQHqEoV_x46UAn/view?usp=sharing" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
