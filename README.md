@@ -147,7 +147,15 @@ https://xd.adobe.com/view/8d4918dc-65f3-44cb-819c-48a28f72e2a7-d81a/
 ## Schema 
 ### Models
 **Users**
-(email: String, password: char, fistname: String, lastname: String, DOB: date, profilePic: file, accountType: String)
+| Property | Type |
+| -------- | ---- |
+| email | String |
+| password | Char | 
+| fistname | String |
+| lastname | String |
+| DOB | Date |
+| profilePic | File |
+| accountType | String |
 
 **Colleges**
 | Property | Type |
@@ -159,37 +167,37 @@ https://xd.adobe.com/view/8d4918dc-65f3-44cb-819c-48a28f72e2a7-d81a/
 **Chatrooms**
 | Property | Type |
 | -------- | ---- |
-| inviteCode | char |
+| inviteCode | Char |
 | collegeName | String | 
 | instructorEmail | String |
 | chatName | String |
 | description | String |
-| chatPic | file |
+| chatPic | File |
 
 **Registers**
 | Property | Type |
 | -------- | ---- |
-| inviteCode | char |
+| inviteCode | Char |
 | studentEmail | String | 
 
 **Posts**
 | Property | Type |
 | -------- | ---- |
-| postID | char |
+| postID | Char |
 | sender | String | 
-| postFile | file |
+| postFile | File |
 | content | String |
-| replyPostID | char |
-| timestamp | datetime |
+| replyPostID | Char |
+| timestamp | Datetime |
 
 **Messages**
 | Property | Type |
 | -------- | ---- |
-| messageID | char |
+| messageID | Char |
 | sender | String | 
 | receiver | String |
 | content | String |
-| timestamp | datetime |
+| timestamp | Datetime |
 
 
 ### Networking
