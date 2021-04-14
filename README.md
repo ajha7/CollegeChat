@@ -203,6 +203,17 @@ https://xd.adobe.com/view/8d4918dc-65f3-44cb-819c-48a28f72e2a7-d81a/
 ### Networking
 Homescreen
 * Login (Get username data and compare credentials)
+```
+let username = usernameTextField.text!
+       let password = passwordTextField.text!
+       PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+           if user != nil{
+               self.performSegue(withIdentifier: "loginSegue", sender: nil)
+           } else {
+               print("Error: \(error?.localizedDescription)")
+           }
+       }
+```
 * Signup (Insert new user data in DB)
 
 College Admin
