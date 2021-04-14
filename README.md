@@ -201,6 +201,54 @@ https://xd.adobe.com/view/8d4918dc-65f3-44cb-819c-48a28f72e2a7-d81a/
 
 
 ### Networking
+Homescreen
+* Login (Get username data and compare credentials)
+* Signup (Insert new user data in DB)
+
+College Admin
+* College Admin Home (Display chatrooms/classes)
+* Add class (Store class/chatroom data in DB)
+* Edit class (Display existing class data from DB + Modify/save class/chatroom data in DB + Delete class)
+* College settings (Display/retrieve college data from DB + Modify college data in DB)
+
+App Admin
+* App Admin Home (Retrieve data from DB)
+* App Admins (Retrieve app admin data from DB)
+* Add App Admin (Store data in DB)
+* Edit App Admin (Retrieve app admin data + Modify/store app admin data + Delete app admin)
+* Users (Retrieve users data from DB)
+* Edit User (Retrieve users data + Modify/store app admin data + Delete user)
+
+Student
+* Student Home (Retrieve chatrooms from Registers table from DB)
+* Student Add Class (Store data in Registers table)
+* Student Profile (Display student data + Modify student data from DB)
+* Student Posts (Retrieve chatroom posts and replies)
+* Student New Post (Save data in DB)
+* Student Post Info (Retrieve post info/replies from DB)
+* Student Post Reply (Save reply/post info in DB)
+* Student Group Chat (Retrieve messages + Save new messages)
+* Student Chat Settings (Display chatroom info + remove student from Chatroom if leave)
+* Student Messages (Display student DM messages info from DB)
+* Student New Message (Query searched user)
+* Student Direct Message (Retrieve messages + Save new messages)
+
+Instructor 
+* Instructor Home (Retrieve chatrooms from Registers table from DB)
+* Instructor Add Class (Store data in Registers table)
+* Instructor Profile (Display student data + modify student data from DB)
+* Instructor Posts (Retrieve chatroom posts and replies + remove posts and replies)
+* Instructor New Post (Save data in DB)
+* Instructor Post Info (Retrieve post info/replies from DB + delete replies)
+* Instructor Post Reply (Save reply/post info in DB)
+* Instructor Group Chat (Retrieve messages + save new messages + delete messages)
+* Instructor Chat Settings (Display chatroom info + remove student from Chatroom)
+* Instructor Edit Group (Modify/Update chatroom info)
+* Instructor Messages (Display student DM messages info from DB)
+* Instructor New Message (Query searched user)
+* Instructor Direct Message (Retrieve messages + Save new messages)
+
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
