@@ -203,24 +203,154 @@ https://xd.adobe.com/view/8d4918dc-65f3-44cb-819c-48a28f72e2a7-d81a/
 ### Networking
 Homescreen
 * Login (Get username data and compare credentials)
-```
-let username = usernameTextField.text!
-       let password = passwordTextField.text!
-       PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
-           if user != nil{
-               self.performSegue(withIdentifier: "loginSegue", sender: nil)
-           } else {
-               print("Error: \(error?.localizedDescription)")
-           }
-       }
-```
-* Signup (Insert new user data in DB)
-
+    
+    ```swift
+    let username = usernameTextField.text!
+    let password = passwordTextField.text!
+    PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+        if user != nil{
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        } else {
+            print("Error: \(error?.localizedDescription)")
+        }
+    } 
+    ``` 
+* Signup (Insert new user data in DB) 
+       
+    ```swift
+    user.username = usernameTextField.text
+    user.password = passwordTextField.text
+    user.email = "email@example.com"
+    user.signUpInBackground { (success, error) in
+        if success {
+            self.performSegue(withIdentifier: "loginSegue", sender: nil)
+        } else {
+            print("Error: \(error?.localizedDescription)")
+        }
+    }
+    ```
 College Admin
 * College Admin Home (Display chatrooms/classes)
+```swift
+    var chatrooms = [PFObject]()
+    let query = PFQuery(className: "Chatrooms")
+    query.includeKeys(["chatName", "chatPic"])
+    query.limit = 20
+    query.findObjectsInBackground { (chatrooms, error) in
+        if chatrooms != nil {
+            self.chatrooms = chatrooms!
+            self.tableView.reloadData()
+        }
+        else {
+            print("Error: \(error)")
+        }
+    }
+```
 * Add class (Store class/chatroom data in DB)
+```swift
+    let chatroomTable = PFObject(className: "Chatrooms")
+    let college_name = collegeNameTextField.text!
+    let instructor_email = instructorEmailTextField.text!
+    let chat_name = chatNameTextField.text!
+    let description = descriptionTextField.text ?? ""
+
+    let imageData = chatPicView.image!.pngData()  //default pic
+    let file = PFFileObject(data: imageData!)
+    let chat_pic = chatPic
+
+    chatroomTable[“inviteCode”] = invite_code
+    chatroomTable[“collegeName”] = college_name
+    chatroomTable[“instructorEmail”] = instructor_email
+    chatroomTable[“chatName”] = chat_name
+    chatroomTable[“description”] = description
+    chatroomTable[“chatPic”] = chat_pic
+    
+    chatroomTable.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+            } else {
+                print("error!")
+            }
+     }
+```
+
 * Edit class (Display existing class data from DB + Modify/save class/chatroom data in DB + Delete class)
+ ```swift
+    var chatrooms = [PFObject]()
+    let query = PFQuery(className: "Chatrooms")
+    query.includeKeys(["inviteCode", "collegeName","instructorEmail", "chatName",“description”, "chatPic"])
+    query.limit = 20
+    query.findObjectsInBackground { (chatrooms, error) in
+        if chatrooms != nil {
+            self.chatrooms = chatrooms!
+            //set properties
+        }
+        else {
+            print("Error: \(error)")
+        }
+    }
+    
+    let chatroomTable = PFObject(className: "Chatrooms")
+    let college_name = collegeNameTextField.text!
+    let instructor_email = instructorEmailTextField.text!
+    let chat_name = chatNameTextField.text!
+    let description = descriptionTextField.text ?? ""
+
+    let imageData = chatPicView.image!.pngData()  //default pic
+    let file = PFFileObject(data: imageData!)
+    let chat_pic = chatPic
+
+    chatroomTable[“inviteCode”] = invite_code
+    chatroomTable[“collegeName”] = college_name
+    chatroomTable[“instructorEmail”] = instructor_email
+    chatroomTable[“chatName”] = chat_name
+    chatroomTable[“description”] = description
+    chatroomTable[“chatPic”] = chat_pic
+    
+    chatroomTable.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+            } else {
+                print("error!")
+            }
+     }
+```
 * College settings (Display/retrieve college data from DB + Modify college data in DB)
+```swift
+    var college = [PFObject]()
+    let query = PFQuery(className: "Colleges")
+    query.includeKeys(["name", "email", "address"])
+    query.limit = 20
+    query.findObjectsInBackground { (college, error) in
+        if college != nil {
+            self.college = college!
+            //set properties
+        }
+        else {
+            print("Error: \(error)")
+        }
+    }
+    
+    let collegeTable = PFObject(className: "Chatrooms")
+    let college_name = collegeNameTextField.text!
+    let college_email = collegeEmailTextField.text!
+    let college_address = collegeAddressTextField.text!
+
+    collegeTable[“name”] = college_name
+    collegeTable[“email”] = college_email
+    collegeTable[“address”] = college_address
+    
+    collegeTable.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("saved!")
+            } else {
+                print("error!")
+            }
+     }
+```
 
 App Admin
 * App Admin Home (Retrieve data from DB)
