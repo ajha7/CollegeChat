@@ -145,9 +145,53 @@ Student
 https://xd.adobe.com/view/8d4918dc-65f3-44cb-819c-48a28f72e2a7-d81a/
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+**Users**
+(email: String, password: char, fistname: String, lastname: String, DOB: date, profilePic: file, accountType: String)
+
+**Colleges**
+| Property | Type |
+| -------- | ---- |
+| name | String |
+| email | String | 
+| address | String |
+
+**Chatrooms**
+| Property | Type |
+| -------- | ---- |
+| inviteCode | char |
+| collegeName | String | 
+| instructorEmail | String |
+| chatName | String |
+| description | String |
+| chatPic | file |
+
+**Registers**
+| Property | Type |
+| -------- | ---- |
+| inviteCode | char |
+| studentEmail | String | 
+
+**Posts**
+| Property | Type |
+| -------- | ---- |
+| postID | char |
+| sender | String | 
+| postFile | file |
+| content | String |
+| replyPostID | char |
+| timestamp | datetime |
+
+**Messages**
+| Property | Type |
+| -------- | ---- |
+| messageID | char |
+| sender | String | 
+| receiver | String |
+| content | String |
+| timestamp | datetime |
+
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
